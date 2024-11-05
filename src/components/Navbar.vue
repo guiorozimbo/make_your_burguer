@@ -1,17 +1,18 @@
 <template>
  <div id="nav">
-  <router-link>
-    <img src="" alt="" id="logo">
+  <router-link to="/">
+    <img :src="logo" :alt="alt" id="logo">
   </router-link>
   <router-link to="/">Home</router-link> |
-  <router-link to="/about">About</router-link>
+  <router-link to="/pedidos">Pedidos</router-link>
  </div> 
 </template>
 
 <script>
 export default{
   name: "Navbar",
-  data() {
+  props:["logo", "alt"]
+ /* data() {
     return {
       selected: null,
       options: [
@@ -27,7 +28,7 @@ export default{
     handleSelect(selected) {
       this.selected = selected;
     },
-  },
+  },*/
 }
 </script>
 <style scoped>
