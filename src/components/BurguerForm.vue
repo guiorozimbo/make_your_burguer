@@ -4,7 +4,7 @@
     test
   </p>
   <div>
-    <form action="" id="burguer-form">
+    <form action="" id="burguer-form" @submit="createBurguer">
       <div class="input-container">
         <label for="nome">Nome do Cliente:</label>
         <input type="text" id="nome" name="name" v-model="nome" placeholder="Digite o seu nome">
@@ -74,6 +74,30 @@ export default{
       }catch(error){
         console.error("Error fetching ingredientes:", error);
       }
+    },
+    async crateBurguer(){
+      try{
+        const req = await fetch("http://localhost:3000/burguer", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            nome: this.nome,
+            pao: this.pao,
+            carne: this.carne,
+            opcionais: this.opcionais,
+            status: this.status
+          })
+        });
+        const data = await req.json();
+        this.status = "Criado";
+        this.msg = data.msg;
+      }catch(error){
+        console.error("Error creating burguer:", error);
+        this.status = "Erro";
+        this.msg = "Houve um erro ao tentar criar o burguer.";
+      } 
     }
   },
   mounted(){
