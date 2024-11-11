@@ -79,27 +79,41 @@
   ],
   "burgers": [
     {
-      "nome": "Matheus Battisti",
-      "carne": "Picanha",
+      "id": "cbce",
+      "nome": "gui",
+      "carne": "Maminha",
       "pao": "Italiano Branco",
       "opcionais": [
         "Bacon",
         "Salame",
-        "Cebola roxa"
+        "Cebola roxa",
+        "Pepino"
       ],
-      "status": "Finalizado",
-      "id": 1
+      "status": "Solicitado"
     },
     {
-      "nome": "João Coelho",
-      "carne": "Maminha",
+      "id": "3e53",
+      "nome": "test",
+      "carne": "Picanha",
       "pao": "3 Queijos",
       "opcionais": [
-        "Salame",
-        "Cebola roxa"
+        "Bacon",
+        "Cheddar",
+        "Tomate"
       ],
-      "status": "Solicitado",
-      "id": 4
+      "status": "Solicitado"
+    },
+    {
+      "id": "4aad",
+      "nome": "mateus",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Tomate"
+      ],
+      "status": "Solicitado"
     }
   ]
 }
