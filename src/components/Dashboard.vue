@@ -1,3 +1,4 @@
+
 <template>
   <div id="burger-table" v-if="burgers">
     <div>
@@ -74,7 +75,8 @@
         });
 
         const res = await req.json()
-
+        this.msg= `O pedido ${res.id} removido com sucesso`
+        setTimeout(() => this.msg= "", 3000)
         this.getPedidos()
 
       },
@@ -91,6 +93,8 @@
         });
 
         const res = await req.json()
+        this.msg= `O status do pedido ${res.id} atualizado com sucesso`
+        setTimeout(() => this.msg= "", 3000)
 
         console.log(res)
 

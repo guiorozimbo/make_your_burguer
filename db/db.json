@@ -65,32 +65,19 @@
   },
   "status": [
     {
-      "id": 1,
+      "id": "1",
       "tipo": "Solicitado"
     },
     {
-      "id": 2,
+      "id": "2",
       "tipo": "Em produção"
     },
     {
-      "id": 3,
+      "id": "3",
       "tipo": "Finalizado"
     }
   ],
   "burgers": [
-    {
-      "id": "cbce",
-      "nome": "gui",
-      "carne": "Maminha",
-      "pao": "Italiano Branco",
-      "opcionais": [
-        "Bacon",
-        "Salame",
-        "Cebola roxa",
-        "Pepino"
-      ],
-      "status": "Solicitado"
-    },
     {
       "id": "3e53",
       "nome": "test",
@@ -101,7 +88,7 @@
         "Cheddar",
         "Tomate"
       ],
-      "status": "Solicitado"
+      "status": "Em produção"
     },
     {
       "id": "4aad",
@@ -112,6 +99,51 @@
         "Bacon",
         "Salame",
         "Tomate"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "b5dc",
+      "nome": "Ashanti",
+      "carne": "Maminha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Bacon",
+        "Tomate"
+      ],
+      "status": "Em produção"
+    },
+    {
+      "id": "16e6",
+      "nome": "gui8.",
+      "carne": "Veggie burger",
+      "pao": "Italiano Branco",
+      "opcionais": [
+        "Bacon",
+        "Salame",
+        "Tomate"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "a514",
+      "nome": "Ashanti",
+      "carne": "Picanha",
+      "pao": "3 Queijos",
+      "opcionais": [
+        "Salame",
+        "Bacon"
+      ],
+      "status": "Solicitado"
+    },
+    {
+      "id": "8cf8",
+      "nome": "Nelly",
+      "carne": "Alcatra",
+      "pao": "Parmesão e Orégano",
+      "opcionais": [
+        "Bacon",
+        "Cheddar"
       ],
       "status": "Solicitado"
     }
